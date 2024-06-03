@@ -1,0 +1,53 @@
+site_name: ACTS Live Telephony Docs
+
+theme:
+  name: "material"
+
+plugins:
+  - mkdocstrings
+
+nav:
+  - Index: index.md
+  - TelLiveCBRSTest: TelLiveCBRSTest.md
+  - TelLiveCellInfoTest: TelLiveCellInfoTest.md
+  - TelLiveConnectivityMonitorBaseTest: TelLiveConnectivityMonitorBaseTest.md
+  - TelLiveConnectivityMonitorTest: TelLiveConnectivityMonitorTest.md
+  - TelLiveDataTest: TelLiveDataTest.md
+  - TelLiveDSDSVoiceTest: TelLiveDSDSVoiceTest.md
+  - TelLiveEmergencyTest: TelLiveEmergencyTest.md
+  - TelLiveGFTDSDSDDSSwitchTest: TelLiveGFTDSDSDDSSwitchTest.md
+  - TelLiveGFTDSDSMessageTest: TelLiveGFTDSDSMessageTest.md
+  - TelLiveGFTDSDSSupplementaryServiceTest: TelLiveGFTDSDSSupplementaryServiceTest.md
+  - TelLiveGFTDSDSVoiceTest: TelLiveGFTDSDSVoiceTest.md
+  - TelLiveGFTDSDSWfcSupplementaryServiceTest: TelLiveGFTDSDSWfcSupplementaryServiceTest.md
+  - TelLiveGFTRcsTest: TelLiveGFTRcsTest.md
+  - TelLiveImsSettingsTest: TelLiveImsSettingsTest.md
+  - TelLiveLockedSimTest: TelLiveLockedSimTest.md
+  - TelLiveMobilityStressTest: TelLiveMobilityStressTest.md
+  - TelLiveNoQXDMLogTest: TelLiveNoQXDMLogTest.md
+  - TelLiveNoSimTest: TelLiveNoSimTest.md
+  - TelLivePostflightTest: TelLivePostflightTest.md
+  - TelLivePreflightTest: TelLivePreflightTest.md
+  - TelLiveProjectFiTest: TelLiveProjectFiTest.md
+  - TelLiveRcsTest: TelLiveRcsTest.md
+  - TelLiveRebootStressTest: TelLiveRebootStressTest.md
+  - TelLiveRilCstVoiceTest: TelLiveRilCstVoiceTest.md
+  - TelLiveRilDataKpiTest: TelLiveRilDataKpiTest.md
+  - TelLiveRilImsKpiTest: TelLiveRilImsKpiTest.md
+  - TelLiveRilImsKpiTest: TelLiveRilImsKpiTest.md
+  - TelLiveRilMessageKpiTest: TelLiveRilMessageKpiTest.md
+  - TelLiveSettingsTest: TelLiveSettingsTest.md
+  - TelLiveSmokeTest: TelLiveSmokeTest.md
+  - TelLiveSmsTest: TelLiveSmsTest.md
+  - TelLiveStressCallTest: TelLiveStressCallTest.md
+  - TelLiveStressDataTest: TelLiveStressDataTest.md
+  - TelLiveStressFdrTest: TelLiveStressFdrTest.md
+  - TelLiveStressSmsTest: TelLiveStressSmsTest.md
+  - TelLiveStressTest: TelLiveStressTest.md
+  - TelLiveVideoDataTest: TelLiveVideoDataTest.md
+  - TelLiveVideoTest: TelLiveVideoTest.md
+  - TelLiveVoiceConfTest: TelLiveVoiceConfTest.md
+  - TelLiveVoiceTest: TelLiveVoiceTest.md
+  - TelWifiDataTest: TelWifiDataTest.md
+  - TelWifiVideoTest: TelWifiVideoTest.md
+  - TelWifiVoiceTest: TelWifiVoiceTest.md
