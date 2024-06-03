@@ -1,0 +1,3083 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../TelLiveRilCstVoiceTest/">
+      
+      
+        <link rel="next" href="../TelLiveRilImsKpiTest/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+    
+    
+      
+        <title>TelLiveRilDataKpiTest - ACTS Live Telephony Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tests.google.tel.live.TelLiveRilDataKpiTest" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ACTS Live Telephony Docs" class="md-header__button md-logo" aria-label="ACTS Live Telephony Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ACTS Live Telephony Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TelLiveRilDataKpiTest
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ACTS Live Telephony Docs" class="md-nav__button md-logo" aria-label="ACTS Live Telephony Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    ACTS Live Telephony Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveCBRSTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveCBRSTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveCellInfoTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveCellInfoTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveConnectivityMonitorBaseTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveConnectivityMonitorBaseTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveConnectivityMonitorTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveConnectivityMonitorTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveDataTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveDataTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveDSDSVoiceTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveDSDSVoiceTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveEmergencyTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveEmergencyTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveGFTDSDSDDSSwitchTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveGFTDSDSDDSSwitchTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveGFTDSDSMessageTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveGFTDSDSMessageTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveGFTDSDSSupplementaryServiceTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveGFTDSDSSupplementaryServiceTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveGFTDSDSVoiceTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveGFTDSDSVoiceTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveGFTDSDSWfcSupplementaryServiceTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveGFTDSDSWfcSupplementaryServiceTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveGFTRcsTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveGFTRcsTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveImsSettingsTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveImsSettingsTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveLockedSimTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveLockedSimTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveMobilityStressTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveMobilityStressTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveNoQXDMLogTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveNoQXDMLogTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveNoSimTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveNoSimTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLivePostflightTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLivePostflightTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLivePreflightTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLivePreflightTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveProjectFiTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveProjectFiTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveRcsTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveRcsTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveRebootStressTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveRebootStressTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveRilCstVoiceTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveRilCstVoiceTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    TelLiveRilDataKpiTest
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveRilDataKpiTest
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest" class="md-nav__link">
+    <span class="md-ellipsis">
+      TelLiveRilDataKpiTest
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest" class="md-nav__link">
+    <span class="md-ellipsis">
+      TelLiveRilDataKpiTest
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TelLiveRilDataKpiTest">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.cycle_cellular_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      cycle_cellular_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.cycle_wfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      cycle_wfc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.switch_dds" class="md-nav__link">
+    <span class="md-ellipsis">
+      switch_dds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.test_cycle_cellular_data_4g" class="md-nav__link">
+    <span class="md-ellipsis">
+      test_cycle_cellular_data_4g
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.test_cycle_wfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      test_cycle_wfc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.test_dds_switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      test_dds_switch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.test_http_download" class="md-nav__link">
+    <span class="md-ellipsis">
+      test_http_download
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveRilImsKpiTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveRilImsKpiTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveRilImsKpiTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveRilImsKpiTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveRilMessageKpiTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveRilMessageKpiTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveSettingsTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveSettingsTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveSmokeTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveSmokeTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveSmsTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveSmsTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveStressCallTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveStressCallTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveStressDataTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveStressDataTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveStressFdrTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveStressFdrTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveStressSmsTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveStressSmsTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveStressTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveStressTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveVideoDataTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveVideoDataTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveVideoTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveVideoTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveVoiceConfTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveVoiceConfTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelLiveVoiceTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelLiveVoiceTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelWifiDataTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelWifiDataTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelWifiVideoTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelWifiVideoTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TelWifiVoiceTest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TelWifiVoiceTest
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest" class="md-nav__link">
+    <span class="md-ellipsis">
+      TelLiveRilDataKpiTest
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest" class="md-nav__link">
+    <span class="md-ellipsis">
+      TelLiveRilDataKpiTest
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TelLiveRilDataKpiTest">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.cycle_cellular_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      cycle_cellular_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.cycle_wfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      cycle_wfc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.switch_dds" class="md-nav__link">
+    <span class="md-ellipsis">
+      switch_dds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.test_cycle_cellular_data_4g" class="md-nav__link">
+    <span class="md-ellipsis">
+      test_cycle_cellular_data_4g
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.test_cycle_wfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      test_cycle_wfc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.test_dds_switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      test_dds_switch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.test_http_download" class="md-nav__link">
+    <span class="md-ellipsis">
+      test_http_download
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>TelLiveRilDataKpiTest</h1>
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="tests.google.tel.live.TelLiveRilDataKpiTest"></a>
+    <div class="doc doc-contents first">
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest" class="doc doc-heading">
+            <code>TelLiveRilDataKpiTest</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="acts_contrib.test_utils.tel.TelephonyBaseTest.TelephonyBaseTest">TelephonyBaseTest</span></code></p>
+
+
+              <details class="quote">
+                <summary>Source code in <code>tests/google/tel/live/TelLiveRilDataKpiTest.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span>
+<span class="normal">273</span>
+<span class="normal">274</span>
+<span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span>
+<span class="normal">283</span>
+<span class="normal">284</span>
+<span class="normal">285</span>
+<span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span>
+<span class="normal">289</span>
+<span class="normal">290</span>
+<span class="normal">291</span>
+<span class="normal">292</span>
+<span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span>
+<span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span>
+<span class="normal">313</span>
+<span class="normal">314</span>
+<span class="normal">315</span>
+<span class="normal">316</span>
+<span class="normal">317</span>
+<span class="normal">318</span>
+<span class="normal">319</span>
+<span class="normal">320</span>
+<span class="normal">321</span>
+<span class="normal">322</span>
+<span class="normal">323</span>
+<span class="normal">324</span>
+<span class="normal">325</span>
+<span class="normal">326</span>
+<span class="normal">327</span>
+<span class="normal">328</span>
+<span class="normal">329</span>
+<span class="normal">330</span>
+<span class="normal">331</span>
+<span class="normal">332</span>
+<span class="normal">333</span>
+<span class="normal">334</span>
+<span class="normal">335</span>
+<span class="normal">336</span>
+<span class="normal">337</span>
+<span class="normal">338</span>
+<span class="normal">339</span>
+<span class="normal">340</span>
+<span class="normal">341</span>
+<span class="normal">342</span>
+<span class="normal">343</span>
+<span class="normal">344</span>
+<span class="normal">345</span>
+<span class="normal">346</span>
+<span class="normal">347</span>
+<span class="normal">348</span>
+<span class="normal">349</span>
+<span class="normal">350</span>
+<span class="normal">351</span>
+<span class="normal">352</span>
+<span class="normal">353</span>
+<span class="normal">354</span>
+<span class="normal">355</span>
+<span class="normal">356</span>
+<span class="normal">357</span>
+<span class="normal">358</span>
+<span class="normal">359</span>
+<span class="normal">360</span>
+<span class="normal">361</span>
+<span class="normal">362</span>
+<span class="normal">363</span>
+<span class="normal">364</span>
+<span class="normal">365</span>
+<span class="normal">366</span>
+<span class="normal">367</span>
+<span class="normal">368</span>
+<span class="normal">369</span>
+<span class="normal">370</span>
+<span class="normal">371</span>
+<span class="normal">372</span>
+<span class="normal">373</span>
+<span class="normal">374</span>
+<span class="normal">375</span>
+<span class="normal">376</span>
+<span class="normal">377</span>
+<span class="normal">378</span>
+<span class="normal">379</span>
+<span class="normal">380</span>
+<span class="normal">381</span>
+<span class="normal">382</span>
+<span class="normal">383</span>
+<span class="normal">384</span>
+<span class="normal">385</span>
+<span class="normal">386</span>
+<span class="normal">387</span>
+<span class="normal">388</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">TelLiveRilDataKpiTest</span><span class="p">(</span><span class="n">TelephonyBaseTest</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">setup_class</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">TelephonyBaseTest</span><span class="o">.</span><span class="n">setup_class</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cycle_cellular_data_cycle</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">user_params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+            <span class="s2">&quot;cycle_cellular_data_cycle&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cycle_wfc_cycle</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">user_params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;cycle_wfc_cycle&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dds_switch_test_cycle</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">user_params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+            <span class="s2">&quot;dds_switch_test_cycle&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">http_download_duration</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">user_params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+            <span class="s2">&quot;http_download_duration&quot;</span><span class="p">,</span> <span class="mi">3600</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">cycle_cellular_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ad</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot; Toggle off and then toggle on again cellular data.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            ad: Android object</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            True if cellular data is cycled successfully. Otherwise False.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">deactivate_and_verify_cellular_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">activate_and_verify_cellular_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="k">def</span> <span class="nf">cycle_wfc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ad</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot; Toggle off and then toggle on again WFC.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            ad: Android object</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            True if WFC is cycled successfully. Otherwise False.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">toggle_wfc</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">,</span> <span class="n">new_state</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">wait_for_wfc_disabled</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">toggle_wfc</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">,</span> <span class="n">new_state</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">wait_for_wfc_enabled</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="k">def</span> <span class="nf">switch_dds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ad</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Switch DDS to the other sub ID.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            ad: Android object</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            True if DDS is switched successfully. Otherwise False.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">current_dds_slot</span> <span class="o">=</span> <span class="n">get_slot_index_from_data_sub_id</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">current_dds_slot</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">set_dds_on_slot_1</span><span class="p">(</span><span class="n">ad</span><span class="p">):</span>
+                <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">set_dds_on_slot_0</span><span class="p">(</span><span class="n">ad</span><span class="p">):</span>
+                <span class="k">return</span> <span class="kc">True</span>
+
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="nd">@test_tracker_info</span><span class="p">(</span><span class="n">uuid</span><span class="o">=</span><span class="s2">&quot;27424b59-efa9-47c3-89b4-4b5415003a58&quot;</span><span class="p">)</span>
+    <span class="nd">@TelephonyBaseTest</span><span class="o">.</span><span class="n">tel_test_wrap</span>
+    <span class="k">def</span> <span class="nf">test_cycle_cellular_data_4g</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Cycle cellular data on LTE to measure data call setup time,</span>
+<span class="sd">            deactivate time and LTE validation time.</span>
+
+<span class="sd">        Test steps:</span>
+<span class="sd">            1. Set up UE on LTE and ensure cellular data is connected.</span>
+<span class="sd">            2. Cycle cellular data.</span>
+<span class="sd">            3. Parse logcat to calculate data call setup time, deactivate time</span>
+<span class="sd">                and LTE validation time.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">ad</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">android_devices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="n">cycle</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cycle_cellular_data_cycle</span>
+
+        <span class="n">tasks</span> <span class="o">=</span> <span class="p">[(</span>
+            <span class="n">phone_setup_4g_for_subscription</span><span class="p">,</span>
+            <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">,</span> <span class="n">get_default_data_sub_id</span><span class="p">(</span><span class="n">ad</span><span class="p">)))]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">multithread_func</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">tasks</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Phone Failed to Set Up Properly.&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">WAIT_TIME_ANDROID_STATE_SETTLING</span><span class="p">)</span>
+
+        <span class="n">cycle_cellular_data_summary</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">attempt</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cycle</span><span class="p">):</span>
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="s1">&#39;======&gt; Cycling cellular data </span><span class="si">%s</span><span class="s1">/</span><span class="si">%s</span><span class="s1"> &lt;======&#39;</span><span class="p">,</span>
+                <span class="n">attempt</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">cycle</span><span class="p">)</span>
+            <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cycle_cellular_data</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span>
+            <span class="n">cycle_cellular_data_summary</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">res</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_take_bug_report</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">test_name</span><span class="p">,</span> <span class="n">begin_time</span><span class="o">=</span><span class="n">get_current_epoch_time</span><span class="p">())</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">attempt</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">CALCULATE_EVERY_N_CYCLES</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">attempt</span> <span class="o">==</span> <span class="n">cycle</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="p">(</span>
+                    <span class="n">res</span><span class="p">,</span>
+                    <span class="n">lst</span><span class="p">,</span>
+                    <span class="n">avg_data_call_setup_time</span><span class="p">,</span>
+                    <span class="n">avg_validation_time_on_lte</span><span class="p">)</span> <span class="o">=</span> <span class="n">parse_setup_data_call</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span>
+
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Setup data call list ======&#39;</span><span class="p">)</span>
+                <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Data call setup time list ======&#39;</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+                    <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+                    <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;------------------&#39;</span><span class="p">)</span>
+
+                <span class="p">(</span>
+                    <span class="n">res</span><span class="p">,</span>
+                    <span class="n">lst</span><span class="p">,</span>
+                    <span class="n">avg_deactivate_data_call_time</span><span class="p">)</span> <span class="o">=</span> <span class="n">parse_deactivate_data_call</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span>
+
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Deactivate data call list ======&#39;</span><span class="p">)</span>
+                <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Data call deactivate time list ======&#39;</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+                    <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+                    <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;------------------&#39;</span><span class="p">)</span>
+
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                    <span class="s1">&#39;Average data call setup time on LTE: </span><span class="si">%.2f</span><span class="s1"> sec.&#39;</span><span class="p">,</span>
+                    <span class="n">avg_data_call_setup_time</span><span class="p">)</span>
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                    <span class="s1">&#39;Average validation time on LTE: </span><span class="si">%.2f</span><span class="s1"> sec.&#39;</span><span class="p">,</span>
+                    <span class="n">avg_validation_time_on_lte</span><span class="p">)</span>
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                    <span class="s1">&#39;Average deactivate data call time on LTE: </span><span class="si">%.2f</span><span class="s1"> sec.&#39;</span><span class="p">,</span>
+                    <span class="n">avg_deactivate_data_call_time</span><span class="p">)</span>
+
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">fail_rate</span> <span class="o">=</span> <span class="n">cycle_cellular_data_summary</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span>
+                            <span class="n">cycle_cellular_data_summary</span><span class="p">)</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                        <span class="s1">&#39;Fail rate of cycling cellular data on LTE: </span><span class="si">%s</span><span class="s1">/</span><span class="si">%s</span><span class="s1"> (</span><span class="si">%.2f</span><span class="s1">)&#39;</span><span class="p">,</span>
+                        <span class="n">cycle_cellular_data_summary</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="kc">False</span><span class="p">),</span>
+                        <span class="nb">len</span><span class="p">(</span><span class="n">cycle_cellular_data_summary</span><span class="p">),</span>
+                        <span class="n">fail_rate</span><span class="p">)</span>
+                <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span>
+                        <span class="s1">&#39;Fail rate of cycling cellular data on LTE: ERROR (</span><span class="si">%s</span><span class="s1">)&#39;</span><span class="p">,</span>
+                        <span class="n">e</span><span class="p">)</span>
+
+    <span class="nd">@test_tracker_info</span><span class="p">(</span><span class="n">uuid</span><span class="o">=</span><span class="s2">&quot;9f4ab929-176d-4f26-8e14-12bd6c25e80a&quot;</span><span class="p">)</span>
+    <span class="nd">@TelephonyBaseTest</span><span class="o">.</span><span class="n">tel_test_wrap</span>
+    <span class="k">def</span> <span class="nf">test_cycle_wfc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Cycle WFC to measure data call setup time and deactivate time on</span>
+<span class="sd">            iwlan.</span>
+
+<span class="sd">        Test steps:</span>
+<span class="sd">            1. Set up UE on iwlan and ensure WFC is registered in Wi-Fi-preferred</span>
+<span class="sd">                mode.</span>
+<span class="sd">            2. Cycle WFC.</span>
+<span class="sd">            3. Parse logcat to calculate data call setup time and deactivate time</span>
+<span class="sd">                on iwlan.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">ad</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">android_devices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="n">cycle</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cycle_wfc_cycle</span>
+
+        <span class="n">tasks</span> <span class="o">=</span> <span class="p">[(</span><span class="n">phone_setup_iwlan</span><span class="p">,</span> <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span>
+            <span class="n">ad</span><span class="p">,</span>
+            <span class="kc">False</span><span class="p">,</span>
+            <span class="n">WFC_MODE_WIFI_PREFERRED</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">wifi_network_ssid</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">wifi_network_pass</span><span class="p">))]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">multithread_func</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">tasks</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Phone Failed to Set Up Properly.&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">WAIT_TIME_ANDROID_STATE_SETTLING</span><span class="p">)</span>
+
+        <span class="n">cycle_wfc_summary</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">attempt</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cycle</span><span class="p">):</span>
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="s1">&#39;==================&gt; Cycling WFC </span><span class="si">%s</span><span class="s1">/</span><span class="si">%s</span><span class="s1"> &lt;==================&#39;</span><span class="p">,</span>
+                <span class="n">attempt</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">cycle</span><span class="p">)</span>
+            <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cycle_wfc</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span>
+            <span class="n">cycle_wfc_summary</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">res</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_take_bug_report</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">test_name</span><span class="p">,</span> <span class="n">begin_time</span><span class="o">=</span><span class="n">get_current_epoch_time</span><span class="p">())</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">attempt</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">CALCULATE_EVERY_N_CYCLES</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">attempt</span> <span class="o">==</span> <span class="n">cycle</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="p">(</span>
+                    <span class="n">res</span><span class="p">,</span>
+                    <span class="n">lst</span><span class="p">,</span>
+                    <span class="n">avg_data_call_setup_time</span><span class="p">)</span> <span class="o">=</span> <span class="n">parse_setup_data_call_on_iwlan</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span>
+
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Setup data call list ======&#39;</span><span class="p">)</span>
+                <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Data call setup time list ======&#39;</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+                    <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+                    <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;------------------&#39;</span><span class="p">)</span>
+
+                <span class="p">(</span>
+                    <span class="n">res</span><span class="p">,</span>
+                    <span class="n">lst</span><span class="p">,</span>
+                    <span class="n">avg_deactivate_data_call_time</span><span class="p">)</span> <span class="o">=</span> <span class="n">parse_deactivate_data_call_on_iwlan</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span>
+
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Deactivate data call list ======&#39;</span><span class="p">)</span>
+                <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Data call deactivate time list ======&#39;</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+                    <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+                    <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;------------------&#39;</span><span class="p">)</span>
+
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                    <span class="s1">&#39;Average WFC data call setup time: </span><span class="si">%.2f</span><span class="s1"> sec.&#39;</span><span class="p">,</span>
+                    <span class="n">avg_data_call_setup_time</span><span class="p">)</span>
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                    <span class="s1">&#39;Average WFC deactivate data call time: </span><span class="si">%.2f</span><span class="s1"> sec.&#39;</span><span class="p">,</span>
+                    <span class="n">avg_deactivate_data_call_time</span><span class="p">)</span>
+
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">fail_rate</span> <span class="o">=</span> <span class="n">cycle_wfc_summary</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span>
+                        <span class="n">cycle_wfc_summary</span><span class="p">)</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                        <span class="s1">&#39;Fail rate of cycling WFC: </span><span class="si">%s</span><span class="s1">/</span><span class="si">%s</span><span class="s1"> (</span><span class="si">%.2f</span><span class="s1">)&#39;</span><span class="p">,</span>
+                        <span class="n">cycle_wfc_summary</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="kc">False</span><span class="p">),</span>
+                        <span class="nb">len</span><span class="p">(</span><span class="n">cycle_wfc_summary</span><span class="p">),</span>
+                        <span class="n">fail_rate</span><span class="p">)</span>
+                <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s1">&#39;Fail rate of cycling WFC: ERROR (</span><span class="si">%s</span><span class="s1">)&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+
+    <span class="nd">@test_tracker_info</span><span class="p">(</span><span class="n">uuid</span><span class="o">=</span><span class="s2">&quot;77388597-d764-4db3-be6f-656e56dc253a&quot;</span><span class="p">)</span>
+    <span class="nd">@TelephonyBaseTest</span><span class="o">.</span><span class="n">tel_test_wrap</span>
+    <span class="k">def</span> <span class="nf">test_dds_switch</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot; Switch DDS to measure DDS switch time and LTE validation time.</span>
+
+<span class="sd">        Test steps:</span>
+<span class="sd">            1. Switch DDS.</span>
+<span class="sd">            2. Parse logcat to calculate DDS switch time and LTE validation time.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">ad</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">android_devices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">cycle</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dds_switch_test_cycle</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="s1">&#39;dsds&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">signals</span><span class="o">.</span><span class="n">TestSkip</span><span class="p">(</span><span class="s2">&quot;UE is in single mode. Test will be skipped.&quot;</span><span class="p">)</span>
+
+        <span class="n">dds_switch_summary</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">attempt</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cycle</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="s1">&#39;======&gt; DDS switch on LTE </span><span class="si">%s</span><span class="s1">/</span><span class="si">%s</span><span class="s1"> &lt;======&#39;</span><span class="p">,</span>
+                <span class="n">attempt</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span>
+                <span class="n">cycle</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">switch_dds</span><span class="p">(</span><span class="n">ad</span><span class="p">):</span>
+                <span class="n">dds_switch_summary</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">dds_switch_summary</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_take_bug_report</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">test_name</span><span class="p">,</span> <span class="n">begin_time</span><span class="o">=</span><span class="n">get_current_epoch_time</span><span class="p">())</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">attempt</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">CALCULATE_EVERY_N_CYCLES</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">attempt</span> <span class="o">==</span> <span class="n">cycle</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="p">(</span>
+                    <span class="n">res</span><span class="p">,</span>
+                    <span class="n">lst</span><span class="p">,</span>
+                    <span class="n">avg_data_call_setup_time</span><span class="p">,</span>
+                    <span class="n">avg_validation_time_on_lte</span><span class="p">)</span> <span class="o">=</span> <span class="n">parse_setup_data_call</span><span class="p">(</span>
+                        <span class="n">ad</span><span class="p">,</span> <span class="n">dds_switch</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Setup data call list ======&#39;</span><span class="p">)</span>
+                <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Data call setup time list ======&#39;</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+                    <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+                    <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;------------------&#39;</span><span class="p">)</span>
+
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                        <span class="s1">&#39;Average data call setup time on LTE: </span><span class="si">%.2f</span><span class="s1"> sec.&#39;</span><span class="p">,</span>
+                        <span class="n">avg_data_call_setup_time</span><span class="p">)</span>
+                <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                    <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span>
+                        <span class="s1">&#39;Average data call setup time on LTE: ERROR (</span><span class="si">%s</span><span class="s1">)&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                        <span class="s1">&#39;Average validation time on LTE: </span><span class="si">%.2f</span><span class="s1"> sec.&#39;</span><span class="p">,</span>
+                        <span class="n">avg_validation_time_on_lte</span><span class="p">)</span>
+                <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                    <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s1">&#39;Average validation tim on LTE: ERROR (</span><span class="si">%s</span><span class="s1">)&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">fail_rate</span> <span class="o">=</span> <span class="n">dds_switch_summary</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">dds_switch_summary</span><span class="p">)</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                        <span class="s1">&#39;Fail rate of cycling cellular data on LTE: </span><span class="si">%s</span><span class="s1">/</span><span class="si">%s</span><span class="s1"> (</span><span class="si">%.2f</span><span class="s1">)&#39;</span><span class="p">,</span>
+                        <span class="n">dds_switch_summary</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="kc">False</span><span class="p">),</span>
+                        <span class="nb">len</span><span class="p">(</span><span class="n">dds_switch_summary</span><span class="p">),</span>
+                        <span class="n">fail_rate</span><span class="p">)</span>
+                <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span>
+                        <span class="s1">&#39;Fail rate of cycling cellular data on LTE: ERROR (</span><span class="si">%s</span><span class="s1">)&#39;</span><span class="p">,</span>
+                        <span class="n">e</span><span class="p">)</span>
+
+    <span class="nd">@test_tracker_info</span><span class="p">(</span><span class="n">uuid</span><span class="o">=</span><span class="s2">&quot;ac0b6541-d900-4413-8ccb-839ae998804e&quot;</span><span class="p">)</span>
+    <span class="nd">@TelephonyBaseTest</span><span class="o">.</span><span class="n">tel_test_wrap</span>
+    <span class="k">def</span> <span class="nf">test_http_download</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;sl4a&#39;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;HTTP download large file for a long time to ensure there is no issue</span>
+<span class="sd">            related to the stability.</span>
+
+<span class="sd">        Test steps:</span>
+<span class="sd">            1. HTTP download a large file (e.g., 512MB) for a long time</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            False if the download is interrupted. Otherwise True.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">ad</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">android_devices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="n">duration</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">http_download_duration</span>
+
+        <span class="n">start_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+
+        <span class="n">result</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">while</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span> <span class="o">&lt;=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="n">duration</span><span class="p">):</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">active_file_download_test</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">,</span> <span class="n">file_name</span><span class="o">=</span><span class="s1">&#39;512MB&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">):</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="kc">False</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_take_bug_report</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">test_name</span><span class="p">,</span> <span class="n">begin_time</span><span class="o">=</span><span class="n">get_current_epoch_time</span><span class="p">())</span>
+        <span class="k">return</span> <span class="n">result</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.cycle_cellular_data" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">cycle_cellular_data</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+      <p>Toggle off and then toggle on again cellular data.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>ad</code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Android object</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>True if cellular data is cycled successfully. Otherwise False.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+            <details class="quote">
+              <summary>Source code in <code>tests/google/tel/live/TelLiveRilDataKpiTest.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">cycle_cellular_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ad</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot; Toggle off and then toggle on again cellular data.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        ad: Android object</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        True if cellular data is cycled successfully. Otherwise False.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">deactivate_and_verify_cellular_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">activate_and_verify_cellular_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">return</span> <span class="kc">True</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.cycle_wfc" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">cycle_wfc</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+      <p>Toggle off and then toggle on again WFC.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>ad</code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Android object</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>True if WFC is cycled successfully. Otherwise False.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+            <details class="quote">
+              <summary>Source code in <code>tests/google/tel/live/TelLiveRilDataKpiTest.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span>
+<span class="normal">91</span>
+<span class="normal">92</span>
+<span class="normal">93</span>
+<span class="normal">94</span>
+<span class="normal">95</span>
+<span class="normal">96</span>
+<span class="normal">97</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">cycle_wfc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ad</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot; Toggle off and then toggle on again WFC.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        ad: Android object</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        True if WFC is cycled successfully. Otherwise False.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">toggle_wfc</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">,</span> <span class="n">new_state</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">wait_for_wfc_disabled</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">toggle_wfc</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">,</span> <span class="n">new_state</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">wait_for_wfc_enabled</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">return</span> <span class="kc">True</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.switch_dds" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">switch_dds</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+      <p>Switch DDS to the other sub ID.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>ad</code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Android object</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>True if DDS is switched successfully. Otherwise False.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+            <details class="quote">
+              <summary>Source code in <code>tests/google/tel/live/TelLiveRilDataKpiTest.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">switch_dds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ad</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Switch DDS to the other sub ID.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        ad: Android object</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        True if DDS is switched successfully. Otherwise False.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">current_dds_slot</span> <span class="o">=</span> <span class="n">get_slot_index_from_data_sub_id</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">current_dds_slot</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">set_dds_on_slot_1</span><span class="p">(</span><span class="n">ad</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">set_dds_on_slot_0</span><span class="p">(</span><span class="n">ad</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="k">return</span> <span class="kc">False</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.test_cycle_cellular_data_4g" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">test_cycle_cellular_data_4g</span><span class="p">()</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+      <p>Cycle cellular data on LTE to measure data call setup time,
+    deactivate time and LTE validation time.</p>
+
+
+<details class="test-steps" open>
+  <summary>Test steps</summary>
+  <ol>
+<li>Set up UE on LTE and ensure cellular data is connected.</li>
+<li>Cycle cellular data.</li>
+<li>Parse logcat to calculate data call setup time, deactivate time
+    and LTE validation time.</li>
+</ol>
+</details>
+            <details class="quote">
+              <summary>Source code in <code>tests/google/tel/live/TelLiveRilDataKpiTest.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@test_tracker_info</span><span class="p">(</span><span class="n">uuid</span><span class="o">=</span><span class="s2">&quot;27424b59-efa9-47c3-89b4-4b5415003a58&quot;</span><span class="p">)</span>
+<span class="nd">@TelephonyBaseTest</span><span class="o">.</span><span class="n">tel_test_wrap</span>
+<span class="k">def</span> <span class="nf">test_cycle_cellular_data_4g</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Cycle cellular data on LTE to measure data call setup time,</span>
+<span class="sd">        deactivate time and LTE validation time.</span>
+
+<span class="sd">    Test steps:</span>
+<span class="sd">        1. Set up UE on LTE and ensure cellular data is connected.</span>
+<span class="sd">        2. Cycle cellular data.</span>
+<span class="sd">        3. Parse logcat to calculate data call setup time, deactivate time</span>
+<span class="sd">            and LTE validation time.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">ad</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">android_devices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="n">cycle</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cycle_cellular_data_cycle</span>
+
+    <span class="n">tasks</span> <span class="o">=</span> <span class="p">[(</span>
+        <span class="n">phone_setup_4g_for_subscription</span><span class="p">,</span>
+        <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">,</span> <span class="n">get_default_data_sub_id</span><span class="p">(</span><span class="n">ad</span><span class="p">)))]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">multithread_func</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">tasks</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Phone Failed to Set Up Properly.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">WAIT_TIME_ANDROID_STATE_SETTLING</span><span class="p">)</span>
+
+    <span class="n">cycle_cellular_data_summary</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">attempt</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cycle</span><span class="p">):</span>
+        <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+            <span class="s1">&#39;======&gt; Cycling cellular data </span><span class="si">%s</span><span class="s1">/</span><span class="si">%s</span><span class="s1"> &lt;======&#39;</span><span class="p">,</span>
+            <span class="n">attempt</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">cycle</span><span class="p">)</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cycle_cellular_data</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span>
+        <span class="n">cycle_cellular_data_summary</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">res</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_take_bug_report</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">test_name</span><span class="p">,</span> <span class="n">begin_time</span><span class="o">=</span><span class="n">get_current_epoch_time</span><span class="p">())</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">attempt</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">CALCULATE_EVERY_N_CYCLES</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">attempt</span> <span class="o">==</span> <span class="n">cycle</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="p">(</span>
+                <span class="n">res</span><span class="p">,</span>
+                <span class="n">lst</span><span class="p">,</span>
+                <span class="n">avg_data_call_setup_time</span><span class="p">,</span>
+                <span class="n">avg_validation_time_on_lte</span><span class="p">)</span> <span class="o">=</span> <span class="n">parse_setup_data_call</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span>
+
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Setup data call list ======&#39;</span><span class="p">)</span>
+            <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Data call setup time list ======&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+                <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;------------------&#39;</span><span class="p">)</span>
+
+            <span class="p">(</span>
+                <span class="n">res</span><span class="p">,</span>
+                <span class="n">lst</span><span class="p">,</span>
+                <span class="n">avg_deactivate_data_call_time</span><span class="p">)</span> <span class="o">=</span> <span class="n">parse_deactivate_data_call</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span>
+
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Deactivate data call list ======&#39;</span><span class="p">)</span>
+            <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Data call deactivate time list ======&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+                <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;------------------&#39;</span><span class="p">)</span>
+
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="s1">&#39;Average data call setup time on LTE: </span><span class="si">%.2f</span><span class="s1"> sec.&#39;</span><span class="p">,</span>
+                <span class="n">avg_data_call_setup_time</span><span class="p">)</span>
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="s1">&#39;Average validation time on LTE: </span><span class="si">%.2f</span><span class="s1"> sec.&#39;</span><span class="p">,</span>
+                <span class="n">avg_validation_time_on_lte</span><span class="p">)</span>
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="s1">&#39;Average deactivate data call time on LTE: </span><span class="si">%.2f</span><span class="s1"> sec.&#39;</span><span class="p">,</span>
+                <span class="n">avg_deactivate_data_call_time</span><span class="p">)</span>
+
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">fail_rate</span> <span class="o">=</span> <span class="n">cycle_cellular_data_summary</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span>
+                        <span class="n">cycle_cellular_data_summary</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                    <span class="s1">&#39;Fail rate of cycling cellular data on LTE: </span><span class="si">%s</span><span class="s1">/</span><span class="si">%s</span><span class="s1"> (</span><span class="si">%.2f</span><span class="s1">)&#39;</span><span class="p">,</span>
+                    <span class="n">cycle_cellular_data_summary</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="kc">False</span><span class="p">),</span>
+                    <span class="nb">len</span><span class="p">(</span><span class="n">cycle_cellular_data_summary</span><span class="p">),</span>
+                    <span class="n">fail_rate</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span>
+                    <span class="s1">&#39;Fail rate of cycling cellular data on LTE: ERROR (</span><span class="si">%s</span><span class="s1">)&#39;</span><span class="p">,</span>
+                    <span class="n">e</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.test_cycle_wfc" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">test_cycle_wfc</span><span class="p">()</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+      <p>Cycle WFC to measure data call setup time and deactivate time on
+    iwlan.</p>
+
+
+<details class="test-steps" open>
+  <summary>Test steps</summary>
+  <ol>
+<li>Set up UE on iwlan and ensure WFC is registered in Wi-Fi-preferred
+    mode.</li>
+<li>Cycle WFC.</li>
+<li>Parse logcat to calculate data call setup time and deactivate time
+    on iwlan.</li>
+</ol>
+</details>
+            <details class="quote">
+              <summary>Source code in <code>tests/google/tel/live/TelLiveRilDataKpiTest.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span>
+<span class="normal">273</span>
+<span class="normal">274</span>
+<span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span>
+<span class="normal">283</span>
+<span class="normal">284</span>
+<span class="normal">285</span>
+<span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span>
+<span class="normal">289</span>
+<span class="normal">290</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@test_tracker_info</span><span class="p">(</span><span class="n">uuid</span><span class="o">=</span><span class="s2">&quot;9f4ab929-176d-4f26-8e14-12bd6c25e80a&quot;</span><span class="p">)</span>
+<span class="nd">@TelephonyBaseTest</span><span class="o">.</span><span class="n">tel_test_wrap</span>
+<span class="k">def</span> <span class="nf">test_cycle_wfc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Cycle WFC to measure data call setup time and deactivate time on</span>
+<span class="sd">        iwlan.</span>
+
+<span class="sd">    Test steps:</span>
+<span class="sd">        1. Set up UE on iwlan and ensure WFC is registered in Wi-Fi-preferred</span>
+<span class="sd">            mode.</span>
+<span class="sd">        2. Cycle WFC.</span>
+<span class="sd">        3. Parse logcat to calculate data call setup time and deactivate time</span>
+<span class="sd">            on iwlan.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">ad</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">android_devices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="n">cycle</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cycle_wfc_cycle</span>
+
+    <span class="n">tasks</span> <span class="o">=</span> <span class="p">[(</span><span class="n">phone_setup_iwlan</span><span class="p">,</span> <span class="p">(</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span>
+        <span class="n">ad</span><span class="p">,</span>
+        <span class="kc">False</span><span class="p">,</span>
+        <span class="n">WFC_MODE_WIFI_PREFERRED</span><span class="p">,</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wifi_network_ssid</span><span class="p">,</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wifi_network_pass</span><span class="p">))]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">multithread_func</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">tasks</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Phone Failed to Set Up Properly.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">WAIT_TIME_ANDROID_STATE_SETTLING</span><span class="p">)</span>
+
+    <span class="n">cycle_wfc_summary</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">attempt</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cycle</span><span class="p">):</span>
+        <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+            <span class="s1">&#39;==================&gt; Cycling WFC </span><span class="si">%s</span><span class="s1">/</span><span class="si">%s</span><span class="s1"> &lt;==================&#39;</span><span class="p">,</span>
+            <span class="n">attempt</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">cycle</span><span class="p">)</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cycle_wfc</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span>
+        <span class="n">cycle_wfc_summary</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">res</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_take_bug_report</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">test_name</span><span class="p">,</span> <span class="n">begin_time</span><span class="o">=</span><span class="n">get_current_epoch_time</span><span class="p">())</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">attempt</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">CALCULATE_EVERY_N_CYCLES</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">attempt</span> <span class="o">==</span> <span class="n">cycle</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="p">(</span>
+                <span class="n">res</span><span class="p">,</span>
+                <span class="n">lst</span><span class="p">,</span>
+                <span class="n">avg_data_call_setup_time</span><span class="p">)</span> <span class="o">=</span> <span class="n">parse_setup_data_call_on_iwlan</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span>
+
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Setup data call list ======&#39;</span><span class="p">)</span>
+            <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Data call setup time list ======&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+                <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;------------------&#39;</span><span class="p">)</span>
+
+            <span class="p">(</span>
+                <span class="n">res</span><span class="p">,</span>
+                <span class="n">lst</span><span class="p">,</span>
+                <span class="n">avg_deactivate_data_call_time</span><span class="p">)</span> <span class="o">=</span> <span class="n">parse_deactivate_data_call_on_iwlan</span><span class="p">(</span><span class="n">ad</span><span class="p">)</span>
+
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Deactivate data call list ======&#39;</span><span class="p">)</span>
+            <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Data call deactivate time list ======&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+                <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;------------------&#39;</span><span class="p">)</span>
+
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="s1">&#39;Average WFC data call setup time: </span><span class="si">%.2f</span><span class="s1"> sec.&#39;</span><span class="p">,</span>
+                <span class="n">avg_data_call_setup_time</span><span class="p">)</span>
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="s1">&#39;Average WFC deactivate data call time: </span><span class="si">%.2f</span><span class="s1"> sec.&#39;</span><span class="p">,</span>
+                <span class="n">avg_deactivate_data_call_time</span><span class="p">)</span>
+
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">fail_rate</span> <span class="o">=</span> <span class="n">cycle_wfc_summary</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span>
+                    <span class="n">cycle_wfc_summary</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                    <span class="s1">&#39;Fail rate of cycling WFC: </span><span class="si">%s</span><span class="s1">/</span><span class="si">%s</span><span class="s1"> (</span><span class="si">%.2f</span><span class="s1">)&#39;</span><span class="p">,</span>
+                    <span class="n">cycle_wfc_summary</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="kc">False</span><span class="p">),</span>
+                    <span class="nb">len</span><span class="p">(</span><span class="n">cycle_wfc_summary</span><span class="p">),</span>
+                    <span class="n">fail_rate</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s1">&#39;Fail rate of cycling WFC: ERROR (</span><span class="si">%s</span><span class="s1">)&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.test_dds_switch" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">test_dds_switch</span><span class="p">()</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+      <p>Switch DDS to measure DDS switch time and LTE validation time.</p>
+
+
+<details class="test-steps" open>
+  <summary>Test steps</summary>
+  <ol>
+<li>Switch DDS.</li>
+<li>Parse logcat to calculate DDS switch time and LTE validation time.</li>
+</ol>
+</details>
+            <details class="quote">
+              <summary>Source code in <code>tests/google/tel/live/TelLiveRilDataKpiTest.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">292</span>
+<span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span>
+<span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span>
+<span class="normal">313</span>
+<span class="normal">314</span>
+<span class="normal">315</span>
+<span class="normal">316</span>
+<span class="normal">317</span>
+<span class="normal">318</span>
+<span class="normal">319</span>
+<span class="normal">320</span>
+<span class="normal">321</span>
+<span class="normal">322</span>
+<span class="normal">323</span>
+<span class="normal">324</span>
+<span class="normal">325</span>
+<span class="normal">326</span>
+<span class="normal">327</span>
+<span class="normal">328</span>
+<span class="normal">329</span>
+<span class="normal">330</span>
+<span class="normal">331</span>
+<span class="normal">332</span>
+<span class="normal">333</span>
+<span class="normal">334</span>
+<span class="normal">335</span>
+<span class="normal">336</span>
+<span class="normal">337</span>
+<span class="normal">338</span>
+<span class="normal">339</span>
+<span class="normal">340</span>
+<span class="normal">341</span>
+<span class="normal">342</span>
+<span class="normal">343</span>
+<span class="normal">344</span>
+<span class="normal">345</span>
+<span class="normal">346</span>
+<span class="normal">347</span>
+<span class="normal">348</span>
+<span class="normal">349</span>
+<span class="normal">350</span>
+<span class="normal">351</span>
+<span class="normal">352</span>
+<span class="normal">353</span>
+<span class="normal">354</span>
+<span class="normal">355</span>
+<span class="normal">356</span>
+<span class="normal">357</span>
+<span class="normal">358</span>
+<span class="normal">359</span>
+<span class="normal">360</span>
+<span class="normal">361</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@test_tracker_info</span><span class="p">(</span><span class="n">uuid</span><span class="o">=</span><span class="s2">&quot;77388597-d764-4db3-be6f-656e56dc253a&quot;</span><span class="p">)</span>
+<span class="nd">@TelephonyBaseTest</span><span class="o">.</span><span class="n">tel_test_wrap</span>
+<span class="k">def</span> <span class="nf">test_dds_switch</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot; Switch DDS to measure DDS switch time and LTE validation time.</span>
+
+<span class="sd">    Test steps:</span>
+<span class="sd">        1. Switch DDS.</span>
+<span class="sd">        2. Parse logcat to calculate DDS switch time and LTE validation time.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">ad</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">android_devices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">cycle</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dds_switch_test_cycle</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="s1">&#39;dsds&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="n">signals</span><span class="o">.</span><span class="n">TestSkip</span><span class="p">(</span><span class="s2">&quot;UE is in single mode. Test will be skipped.&quot;</span><span class="p">)</span>
+
+    <span class="n">dds_switch_summary</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">attempt</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cycle</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+            <span class="s1">&#39;======&gt; DDS switch on LTE </span><span class="si">%s</span><span class="s1">/</span><span class="si">%s</span><span class="s1"> &lt;======&#39;</span><span class="p">,</span>
+            <span class="n">attempt</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">cycle</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">switch_dds</span><span class="p">(</span><span class="n">ad</span><span class="p">):</span>
+            <span class="n">dds_switch_summary</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">dds_switch_summary</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_take_bug_report</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">test_name</span><span class="p">,</span> <span class="n">begin_time</span><span class="o">=</span><span class="n">get_current_epoch_time</span><span class="p">())</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">attempt</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">CALCULATE_EVERY_N_CYCLES</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">attempt</span> <span class="o">==</span> <span class="n">cycle</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="p">(</span>
+                <span class="n">res</span><span class="p">,</span>
+                <span class="n">lst</span><span class="p">,</span>
+                <span class="n">avg_data_call_setup_time</span><span class="p">,</span>
+                <span class="n">avg_validation_time_on_lte</span><span class="p">)</span> <span class="o">=</span> <span class="n">parse_setup_data_call</span><span class="p">(</span>
+                    <span class="n">ad</span><span class="p">,</span> <span class="n">dds_switch</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Setup data call list ======&#39;</span><span class="p">)</span>
+            <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+
+            <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;====== Data call setup time list ======&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+                <span class="n">print_nested_dict</span><span class="p">(</span><span class="n">ad</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;------------------&#39;</span><span class="p">)</span>
+
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                    <span class="s1">&#39;Average data call setup time on LTE: </span><span class="si">%.2f</span><span class="s1"> sec.&#39;</span><span class="p">,</span>
+                    <span class="n">avg_data_call_setup_time</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span>
+                    <span class="s1">&#39;Average data call setup time on LTE: ERROR (</span><span class="si">%s</span><span class="s1">)&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                    <span class="s1">&#39;Average validation time on LTE: </span><span class="si">%.2f</span><span class="s1"> sec.&#39;</span><span class="p">,</span>
+                    <span class="n">avg_validation_time_on_lte</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="n">ad</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s1">&#39;Average validation tim on LTE: ERROR (</span><span class="si">%s</span><span class="s1">)&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">fail_rate</span> <span class="o">=</span> <span class="n">dds_switch_summary</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">dds_switch_summary</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                    <span class="s1">&#39;Fail rate of cycling cellular data on LTE: </span><span class="si">%s</span><span class="s1">/</span><span class="si">%s</span><span class="s1"> (</span><span class="si">%.2f</span><span class="s1">)&#39;</span><span class="p">,</span>
+                    <span class="n">dds_switch_summary</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="kc">False</span><span class="p">),</span>
+                    <span class="nb">len</span><span class="p">(</span><span class="n">dds_switch_summary</span><span class="p">),</span>
+                    <span class="n">fail_rate</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span>
+                    <span class="s1">&#39;Fail rate of cycling cellular data on LTE: ERROR (</span><span class="si">%s</span><span class="s1">)&#39;</span><span class="p">,</span>
+                    <span class="n">e</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="tests.google.tel.live.TelLiveRilDataKpiTest.TelLiveRilDataKpiTest.test_http_download" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">test_http_download</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;sl4a&#39;</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+      <p>HTTP download large file for a long time to ensure there is no issue
+    related to the stability.</p>
+
+
+<details class="test-steps" open>
+  <summary>Test steps</summary>
+  <ol>
+<li>HTTP download a large file (e.g., 512MB) for a long time</li>
+</ol>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>False if the download is interrupted. Otherwise True.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+            <details class="quote">
+              <summary>Source code in <code>tests/google/tel/live/TelLiveRilDataKpiTest.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">363</span>
+<span class="normal">364</span>
+<span class="normal">365</span>
+<span class="normal">366</span>
+<span class="normal">367</span>
+<span class="normal">368</span>
+<span class="normal">369</span>
+<span class="normal">370</span>
+<span class="normal">371</span>
+<span class="normal">372</span>
+<span class="normal">373</span>
+<span class="normal">374</span>
+<span class="normal">375</span>
+<span class="normal">376</span>
+<span class="normal">377</span>
+<span class="normal">378</span>
+<span class="normal">379</span>
+<span class="normal">380</span>
+<span class="normal">381</span>
+<span class="normal">382</span>
+<span class="normal">383</span>
+<span class="normal">384</span>
+<span class="normal">385</span>
+<span class="normal">386</span>
+<span class="normal">387</span>
+<span class="normal">388</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@test_tracker_info</span><span class="p">(</span><span class="n">uuid</span><span class="o">=</span><span class="s2">&quot;ac0b6541-d900-4413-8ccb-839ae998804e&quot;</span><span class="p">)</span>
+<span class="nd">@TelephonyBaseTest</span><span class="o">.</span><span class="n">tel_test_wrap</span>
+<span class="k">def</span> <span class="nf">test_http_download</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;sl4a&#39;</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;HTTP download large file for a long time to ensure there is no issue</span>
+<span class="sd">        related to the stability.</span>
+
+<span class="sd">    Test steps:</span>
+<span class="sd">        1. HTTP download a large file (e.g., 512MB) for a long time</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        False if the download is interrupted. Otherwise True.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">ad</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">android_devices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="n">duration</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">http_download_duration</span>
+
+    <span class="n">start_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">while</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span> <span class="o">&lt;=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="n">duration</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">active_file_download_test</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">,</span> <span class="n">ad</span><span class="p">,</span> <span class="n">file_name</span><span class="o">=</span><span class="s1">&#39;512MB&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">):</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_take_bug_report</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">test_name</span><span class="p">,</span> <span class="n">begin_time</span><span class="o">=</span><span class="n">get_current_epoch_time</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">result</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+    
+  </body>
+</html>
